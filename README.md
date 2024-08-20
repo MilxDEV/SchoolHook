@@ -19,7 +19,7 @@ Feel free to use the codes.
 
 
 > Help/Commands Menu
-![A picture of the help/command menu]([https://github.com/MilxDEV/SchoolHook/blob/main/images/menu.png](https://github.com/MilxDEV/SchoolHook/blob/main/images/HelpMenu.PNG))
+![A picture of the help/command menu](https://github.com/MilxDEV/SchoolHook/blob/main/images/HelpMenu.PNG)
 
 > Goodbye Text!
 ![A "simple" goodbye text ;D](https://github.com/MilxDEV/SchoolHook/blob/main/images/Goodbye.PNG)
