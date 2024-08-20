@@ -10,8 +10,25 @@ class colors:
     RESET = '\033[0m'
 
 
-avaible_commands = ["BruteForce(beta)", "HashIT!(beta)"]
+avaible_commands = {
+    "Item1" : False,
+    "Item2" : True,
+    "Item3" : True,
+    "Item4" : False,
+    "Item5" : True,
+    "Item6" : False,
+    "Item7" : True,
+    "Item8" : True
+}
+
+
+def setStatus(command_name, is_active):
+    if is_active:
+        return f"{colors.GREEN}{command_name}{colors.RESET}"
+    else:
+        return f"{colors.RED}{command_name}{colors.RESET}"
 
 def listCommands():
-    print(colors.RESET + f"If the command name is {colors.GREEN}GREEN{colors.RESET} then its avaible if its {colors.RED}RED{colors.RESET} then its currently unavaible!\n")
-    print(f"{colors.RED} {avaible_commands.pop(0)}")
+    print(f"If the command name is {colors.GREEN}GREEN{colors.RESET} then it's available, if it's {colors.RED}RED{colors.RESET} then it's currently unavailable!\n")
+    for command_name, is_active in avaible_commands.items():
+        print(setStatus(command_name, is_active))

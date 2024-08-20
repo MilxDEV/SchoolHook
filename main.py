@@ -11,15 +11,19 @@ from commands import (list_help)
 
 
 class colors:
+    BLACK = "\033[0;30m"
     RED = '\033[91m'
     GREEN = '\033[92m'
     YELLOW = '\033[93m'
     BLUE = '\033[94m'
     WHITE = '\033[97m'
+    PURPLE = "\033[0;35m"
+    CYAN = "\033[0;36m"
     RESET = '\033[0m'
 ####################################################################
 
 running = True
+is_main_menu = True
 
 ###################################################################
 menu.draw_banner() #Draw the logo as an ASCII
@@ -41,6 +45,8 @@ while running:
         menu.main_menu()
         is_main_menu = True
     if cmd == "exit" and is_main_menu == True:
+        menu.clear_screen()
+        menu.clear_screen()
         menu.clear_screen()
         menu.exit_scrn()
         running = False
