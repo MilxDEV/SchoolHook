@@ -40,5 +40,5 @@ while running:
         menu.main_menu()
     if cmd == "exit":
         menu.clear_screen()
-        print(colors.RED + "See you...")
+        menu.exit_scrn()
         running = False
