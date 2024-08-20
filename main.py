@@ -1,7 +1,15 @@
-import os,ansi,sys,time
+# TODO
+# - Make new commands
+# - Make the HELP command
+# - Joy coding :D:D:D
+
+
+import os,sys,time,binascii
 import socket
 
 import src.menu_func as menu
+# from commands import *
+
 
 
 class colors:
@@ -13,12 +21,7 @@ class colors:
     RESET = '\033[0m'
 
 
+menu.draw_banner() #Draw the logo as an ASCII
+menu.main_menu() # The main menu pop up
 
-
-def main():
-    menu.draw_banner()
-    menu.main_menu()
-
-
-if __name__ == "__main__":
-    main()
+cmd = input(f" {colors.BLUE}> ") #Command line

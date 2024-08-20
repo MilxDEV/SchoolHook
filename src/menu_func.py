@@ -1,4 +1,4 @@
-import os,ansi,time
+import os,binascii,time
 
 class colors:
     BLACK = "\033[0;30m"
@@ -42,6 +42,3 @@ def main_menu():
     print(f" {colors.BLUE}=================================" + colors.RESET)
 
 
-
-def run(command):
-    pass
