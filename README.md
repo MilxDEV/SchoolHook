@@ -25,4 +25,5 @@ Feel free to use the codes.
 ![A "simple" goodbye text ;D](https://github.com/MilxDEV/SchoolHook/blob/main/images/Goodbye.PNG)
 
 
-# Thank you to visiting my project!
+# Thank you for visiting my project!
+**Have a good one mate**
