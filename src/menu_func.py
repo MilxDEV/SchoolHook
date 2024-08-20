@@ -12,6 +12,10 @@ class colors:
     RESET = '\033[0m'
 
 
+def clear_screen():
+    os.system('clear')
+
+
 def draw_banner():
     logo = '''
   @@@@@@  @@@@@@@ @@@  @@@  @@@@@@   @@@@@@  @@@     
@@ -60,6 +64,3 @@ def exit_scrn():
 
     print(colors.RED + goodbye + colors.RESET)
 
-
-def clear_screen():
-    os.system('clear')
