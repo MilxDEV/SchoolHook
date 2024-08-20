@@ -34,11 +34,16 @@ while running:
     if cmd == "help":
         menu.clear_screen()
         list_help.listCommands()
+        is_main_menu = False
     if cmd == "return":
         menu.clear_screen()
         menu.draw_banner()
         menu.main_menu()
-    if cmd == "exit":
+        is_main_menu = True
+    if cmd == "exit" and is_main_menu == True:
         menu.clear_screen()
         menu.exit_scrn()
         running = False
+    elif cmd == "exit" and is_main_menu == False:
+        print(f"{colors.RED}[!ERROR!] {colors.BLUE}You have to be in the MAIN MENU to exit the program...{colors.RESET}")
+        print(f"{colors.BLUE}Use: {colors.GREEN}'return' to go back to the main menu" + colors.RESET)
