@@ -42,3 +42,5 @@ def main_menu():
     print(f" {colors.BLUE}=================================" + colors.RESET)
 
 
+def clear_screen():
+    os.system('clear')
